@@ -133,7 +133,7 @@ a{
     bottom:0px;
     left:50%;
 } */
-@media (max-height:500px){
+@media (max-height:440px){
     .img-container{
         display: none;
     }
