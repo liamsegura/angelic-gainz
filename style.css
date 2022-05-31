@@ -109,6 +109,7 @@ a{
             left: 6rem;
             z-index: 2;
             font-family: 'Inter', sans-serif;
+            font-size: 0.1rem;
             }
 .img-one {
 
@@ -125,17 +126,19 @@ a{
             left: 13rem;
             z-index: 2;
             font-family: 'Inter', sans-serif;
+            font-size: 0.1rem;
             }
 .rotate{
     transform: rotate(-90deg)!important;
 }
 
 .date{
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     letter-spacing: -0.2rem;
     position:fixed;
-    bottom:5%;
+    bottom:2.5%;
     left:5%;
     z-index: 5;
 }
@@ -149,8 +152,45 @@ a{
     .img-container{
         display: none;
     }
+    .date{
+        display: none;
+}
+}
+
+@media (min-width:375px)  {
+
+    .img-name-one {
+
+        left: 11rem;
+       
+        }
+    
+    .img-name-two {
+    
+        left: 6rem;
+        }
+
 
 }
+
+@media (min-width:400px)  {
+
+    .img-name-one {
+
+        left: 12rem;
+       
+        }
+    
+    .img-name-two {
+    
+        left: 7rem;
+        }
+
+
+}
+
+
+
 
 
 @media (min-width:500px)  {
@@ -162,8 +202,20 @@ a{
         
         padding-bottom: 0.5rem;
     }
-  
+    .img-name-one {
+
+        left: 15rem;
+       
+        }
+    
+    .img-name-two {
+    
+        left: 9rem;
+        }
+
+
 }
+
 @media (min-width:600px) {
     .hero-text {
         padding-top: 8rem;
@@ -171,6 +223,18 @@ a{
     .img-two {
         width: 59%;
     }
+    .img-name-one {
+
+        left: 3rem;
+       
+        }
+    
+    .img-name-two {
+    
+        left: 18rem;
+        }
+
+
 }
 
 @media (min-width:600px) {
@@ -199,7 +263,7 @@ a{
         }
 
         .img-two {
-        width: 36%;
+        width: 44%;
         position: fixed;
         bottom: 0px;
         left: 52%;
@@ -212,9 +276,10 @@ a{
         }
 }
 
+
 @media (min-width:1000px){
     .hero-text {
-        padding-top: 6rem;
+        padding-top: 12rem;
     }
 
     .img-one{
@@ -228,28 +293,24 @@ a{
     bottom: 0px;
     left: 52%;
     }
-}
+    .img-name-one {
 
-@media (min-width:1000px){
-    .hero-text {
-        padding-top: 6rem;
-    }
+        left: 6rem;
+       
+        }
+    
+    .img-name-two {
+    
+        left: 31rem;
+        }
 
-    .img-one{
-        left: 13%;
-        width: 32%;
-    }
-
-    .img-two {
-    width: 36%;
-    position: fixed;
-    bottom: 0px;
-    left: 52%;
-    }
 }
 
 
 @media (min-width:1300px){
+    .hero-text {
+        padding-top: 6rem;
+    }
     
 .img-two {
     width: 29%;
@@ -257,4 +318,15 @@ a{
     bottom: 0px;
     left: 60%;
 }
+.img-name-one {
+
+    left: 9rem;
+   
+    }
+
+.img-name-two {
+
+    left: 51rem;
+    }
+
 }
