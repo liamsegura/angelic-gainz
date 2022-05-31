@@ -55,8 +55,8 @@ table {
 
 body{
     background-color: black;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
     position: fixed;
 }
 a{
@@ -69,8 +69,9 @@ a{
     align-items: center;
 }
 .hero-text{
-    padding-top: 15rem;
+    padding-top: 12rem;
     width: 100%;
+    padding-bottom: 1rem;
 }
 .btn-primary{
     padding: 10px 15px;
@@ -79,26 +80,42 @@ a{
     font-family: 'Inter', sans-serif;;
     font-weight: 600;
     font-size: 1.2rem;
+    letter-spacing: -0.1rem;
+    z-index: 100;
 }
 
 .img-container{
     display: flex;
 }
-.img-name {
-    transform: rotate(-90deg);
 
+.img-name-two {
+    transform: rotate(-90deg);
     position: fixed;
-    bottom: 34px;
-    left: 43%;
+    bottom: 13rem;
+    left: 6rem;
     z-index: 2;
     }
 .img-one {
-    width: 48%;
+
     position: fixed;
     bottom: 0px;
     left: -2%;
     z-index: 1;
     }
+    .img-one img{
+        width: 48%;
+        }
+        .img-name-one {
+            border:1px solid red;
+            position: relative;
+            top: 0rem;
+            left: 0;
+            z-index: 2;
+            transform: rotate(-90deg);
+        }
+.rotate{
+    transform: rotate(-90deg)!important;
+}
 .img-two {
     width: 66%;
 
