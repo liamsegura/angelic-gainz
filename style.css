@@ -1,0 +1,123 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*{
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* content */
+
+body{
+    background-color: black;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+}
+.collection-container{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-text{
+    padding-top: 15rem;
+    width: 100%;
+}
+.btn-primary{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6F29E1;
+    font-family: 'Inter', sans-serif;;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.img-container{
+    display: flex;
+}
+.img-name {
+    transform: rotate(-90deg);
+
+    position: fixed;
+    bottom: 34px;
+    left: 43%;
+    z-index: 2;
+    }
+.img-one {
+    width: 48%;
+    position: fixed;
+    bottom: 0px;
+    left: -2%;
+    z-index: 1;
+    }
+.img-two {
+    width: 66%;
+
+    position: fixed;
+    bottom: 0px;
+    left: 35%;
+    }
+/* .fix{
+    position:fixed;
+    bottom:0px;
+    left:50%;
+} */
+@media (min-width:320px)  {
+
+
+  
+ 
+}
+@media (min-width:600px) {
+
+
+}
