@@ -78,6 +78,7 @@ navbar a{
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: -2px;
+    font-family: 'Inter', sans-serif;
 }
 /* hamberger test */
 
@@ -219,7 +220,7 @@ a{
     transform: rotate(-90deg)!important;
 }
 .about{
-    display: block;
+    display: none;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     letter-spacing: -0.2rem;
@@ -228,7 +229,9 @@ a{
     right:2rem;
     z-index: 100;
 }
-
+.about-hide{
+    display: block;
+}
 .date{
     display: block;
     font-family: 'Inter', sans-serif;

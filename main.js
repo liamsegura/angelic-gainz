@@ -46,8 +46,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const menu = document.getElementById('toggle').addEventListener('click', () => {
 
     const navbar = document.querySelector('navbar')
+    const about = document.querySelector('.about')
 
     navbar.classList.toggle('navbar-hide')
     navbar.classList.add('animate__animated', 'animate__slideInRight');
+
+    about.classList.toggle('about-hide')
+    about.classList.add('animate__animated', 'animate__slideInRight');
+
+
 
 })
