@@ -79,6 +79,8 @@ navbar a{
     font-weight: 700;
     letter-spacing: -2px;
     font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    padding-left: 0;
 }
 /* hamberger test */
 
@@ -340,15 +342,28 @@ a{
             display: block;
     }
     navbar{
-        display: flex;   
-        height: 5rem;
-        align-items: center;
-        padding-left: 25%;
-       }
-       navbar a{
-           margin-left: 1.5rem;
-           font-size: 1rem;
-       }
+        position: absolute;
+     display: flex;  
+     flex-direction: row;
+     right: 0;
+     height: 4rem;
+     width: 100%;
+     justify-content: start;
+     align-items: center;
+     padding-top: 0rem;
+     background-color: black;
+     z-index: 100;
+     padding-left: 30%;
+    }
+    
+    navbar a{
+        margin-right: 2rem;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: -2px;
+        font-family: 'Inter', sans-serif;
+        margin-top: 10px;
+    }
 
 }
 
@@ -423,7 +438,7 @@ a{
 
 @media (min-width:1300px){
     .hero-text {
-        padding-top: 0rem;
+        padding-top: 8rem;
     }
     .img-one{
 
@@ -451,7 +466,7 @@ a{
 
 @media (min-width:1900px){
     .hero-text {
-        padding-top: 0rem;
+        padding-top: 6rem;
     }
     .btn-primary {
         font-size: 2rem;
