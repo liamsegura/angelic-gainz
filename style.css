@@ -333,6 +333,11 @@ a{
     .hero-text {
         padding-top: 8rem;
     }
+    .btn-primary {
+        font-size: 2rem;
+        letter-spacing: 0;
+        margin-left: 3.5rem;
+        }
     
 .img-two {
     width: 25%;
