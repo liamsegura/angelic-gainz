@@ -57,6 +57,64 @@ table {
 
 /* content */
 
+navbar{
+ display: flex;   
+ height: 5rem;
+ align-items: center;
+ padding-left: 25%;
+}
+navbar a{
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+/* hamberger test */
+
+#toggle {
+    display: none;
+  }
+  
+  /**
+    Hamburger
+  **/
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 6em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 3em;
+    height: 45px;
+    z-index: 5;
+    }
+  
+  .hamburger div {
+    position: relative;
+    width: 2.2em;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin-top: 6px;
+    transition: all 0.3s ease-in-out;
+    }
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 12px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -2px;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  }
+
 body{
     background-color: black;
     padding-right: 0.1rem;
@@ -73,7 +131,7 @@ a{
     align-items: center;
 }
 .hero-text{
-    padding-top: 12rem;
+    padding-top: 8rem;
     width: 100vw;
     padding-bottom: 2rem;
 }
@@ -244,6 +302,9 @@ a{
 }
 
 @media (min-width:600px) {
+    .hamburger {
+        display: none;
+    }
     .hero-text {
         padding-top: 8rem;
     }
@@ -284,7 +345,7 @@ a{
 
 @media (min-width:1000px){
         .hero-text {
-            padding-top: 6rem;
+            padding-top: 4rem;
         }
 
         .img-one{
@@ -308,7 +369,7 @@ a{
 
 @media (min-width:1000px){
     .hero-text {
-        padding-top: 12rem;
+        padding-top: 4rem;
     }
 
     .img-one{
@@ -338,7 +399,7 @@ a{
 
 @media (min-width:1300px){
     .hero-text {
-        padding-top: 6rem;
+        padding-top: 0rem;
     }
     .img-one{
 
@@ -366,7 +427,7 @@ a{
 
 @media (min-width:1900px){
     .hero-text {
-        padding-top: 8rem;
+        padding-top: 0rem;
     }
     .btn-primary {
         font-size: 2rem;
@@ -413,49 +474,3 @@ body {
 
 
 
-/* hamberger test */
-
-#toggle {
-    display: none;
-  }
-  
-  /**
-    Hamburger
-  **/
-  .hamburger {
-    position: absolute;
-    top: 6em;
-    right: 5%;
-    margin-left: -2em;
-    margin-top: -45px;
-    width: 3em;
-    height: 45px;
-    z-index: 5;
-    }
-  
-  .hamburger div {
-    position: relative;
-    width: 2.2em;
-    height: 2px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    margin-top: 6px;
-    transition: all 0.3s ease-in-out;
-    }
-  #toggle:checked + .hamburger .top-bun {
-    transform: rotate(-45deg);
-    margin-top: 12px;
-  }
-  #toggle:checked + .hamburger .bottom-bun {
-    opacity: 0;
-    transform: rotate(45deg);
-  }
-  #toggle:checked + .hamburger .meat {
-    transform: rotate(45deg);
-    margin-top: -2px;
-  }
-  
-  #toggle:checked + .hamburger + .nav {
-    top: 0;
-    transform: scale(1);
-  }
