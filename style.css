@@ -88,7 +88,25 @@ a{
     font-size: 1.5rem;
     z-index: 100;
     margin-left: 0;
+    animation: color-animation 6s infinite linear alternate;
 }
+
+@keyframes color-animation {
+    0% {
+       background: #6F29E1;
+    }
+    50% {
+       background: #6a1b9a;
+    } 
+    100% {
+       background: #F1473D;
+    } 
+}
+
+
+
+
+
 
 .img-container{
     display: block;
@@ -130,6 +148,16 @@ a{
 .rotate{
     transform: rotate(-90deg)!important;
 }
+.about{
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.2rem;
+    position:fixed;
+    bottom:2.5%;
+    right:2%;
+    z-index: 5;
+}
 
 .date{
     display: block;
@@ -138,7 +166,7 @@ a{
     letter-spacing: -0.2rem;
     position:fixed;
     bottom:2.5%;
-    left:5%;
+    left:2%;
     z-index: 5;
 }
 
@@ -232,6 +260,9 @@ a{
     
         display: none;
         }
+    .about{
+            display: block;
+    }
 
 
 }
