@@ -12,6 +12,9 @@ headsortails()
 // };
 
 
+
+
+
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", function(event) {
   
@@ -23,7 +26,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
        window.requestAnimationFrame(function() {
       
           // GSAP custom code goes here     
-          document.documentElement.classList.add('show-time');
+        const element = document.querySelector('.hero-text');
+        const imgOne = document.querySelector('.img-one')
+        const imgTwo = document.querySelector('.img-two')
+
+
+        element.classList.add('animate__animated', 'animate__fadeInRight');
+        imgOne.classList.add('animate__animated', 'animate__fadeInLeft');
+        imgTwo.classList.add('animate__animated', 'animate__fadeInRight');
+        document.documentElement.classList.add('show-time');
          
        });
       

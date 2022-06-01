@@ -372,10 +372,11 @@ a{
 body {
     opacity: 0;
     left: -100%;
-    transition: opacity 300ms ease-in;
+    transition: opacity 700ms ease-in;
 }
 
 .show-time body {
     opacity: 1;
     left: 0;
 }
+
