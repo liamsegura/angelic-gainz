@@ -328,3 +328,27 @@ a{
     }
 
 }
+
+@media (min-width:1900px){
+    .hero-text {
+        padding-top: 8rem;
+    }
+    
+.img-two {
+    width: 25%;
+    position: fixed;
+    bottom: 0px;
+    left: 60%;
+}
+.img-name-one {
+
+    left: 9rem;
+   
+    }
+
+.img-name-two {
+
+    left: 51rem;
+    }
+
+}
