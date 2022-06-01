@@ -74,7 +74,7 @@ a{
 }
 .hero-text{
     padding-top: 12rem;
-    width: 100%;
+    width: 100vw;
     padding-bottom: 2rem;
 }
 
@@ -115,7 +115,7 @@ a{
 
     position: fixed;
     bottom: 0px;
-    left: -2%;
+    left: -4%;
     z-index: 1;
     width: 48%;
     }
@@ -225,13 +225,13 @@ a{
     }
     .img-name-one {
 
-        left: 3rem;
+       display: none;
        
         }
     
     .img-name-two {
     
-        left: 18rem;
+        display: none;
         }
 
 
