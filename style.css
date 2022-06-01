@@ -309,6 +309,10 @@ a{
     .hero-text {
         padding-top: 6rem;
     }
+    .img-one{
+
+        width: 28%;
+    }
     
 .img-two {
     width: 29%;
@@ -338,7 +342,10 @@ a{
         letter-spacing: 0;
         margin-left: 3.5rem;
         }
-    
+        .img-one{
+
+            width: 26%;
+        }
 .img-two {
     width: 25%;
     position: fixed;
