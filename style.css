@@ -221,7 +221,7 @@ a{
             left: 6rem;
             z-index: 2;
             font-family: 'Inter', sans-serif;
-            font-size: 0.1rem;
+            font-size: 10px;
             }
 .img-two:hover{
     rotate: 2deg;
@@ -243,11 +243,13 @@ a{
             left: 13rem;
             z-index: 2;
             font-family: 'Inter', sans-serif;
-            font-size: 0.1rem;
+            font-size: 10px;
             }
             .img-one:hover{
                 rotate: -2deg;
                 scale: 1.1;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
             }
 .rotate{
     transform: rotate(-90deg)!important;
@@ -313,13 +315,13 @@ a{
 
     .img-name-one {
 
-        left: 11rem;
+        left: 16em;
        
         }
     
     .img-name-two {
     
-        left: 6rem;
+        left: 8rem;
         }
 
 
