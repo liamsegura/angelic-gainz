@@ -60,7 +60,7 @@ table {
     display: flex;
 }
 navbar{
-    position: absolute;
+ position: absolute;
  display: flex;  
  flex-direction: column;
  right: 0;
@@ -71,6 +71,7 @@ navbar{
  padding-top: 8rem;
  background-color: black;
  z-index: 100;
+
  transform: translateX(100%);
  transition: all 700ms ease-out;
 }
@@ -106,6 +107,7 @@ navbar a{
     width: 3em;
     height: 45px;
     z-index: 101;
+    cursor:pointer;
     }
   
   .hamburger div {
@@ -167,6 +169,11 @@ a{
     z-index: 10;
     margin-left: 0;
     animation: color-animation 4s infinite linear alternate;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+    animation: none;
 }
 
 @keyframes color-animation {
@@ -247,6 +254,12 @@ a{
     bottom:2.5%;
     left:2%;
     z-index: 5;
+    color: white;
+    background:none;
+}
+.date:hover{
+    color: black;
+    background:white;
 }
 
 /* .fix{
