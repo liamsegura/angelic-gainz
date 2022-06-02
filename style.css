@@ -87,7 +87,13 @@ navbar a{
     font-family: 'Inter', sans-serif;
     margin-top: 10px;
     padding-left: 0;
+    background: none;
 }
+navbar a:hover{
+    background-color: white;
+    color: black;
+}
+
 /* hamberger test */
 
 #toggle {
@@ -240,11 +246,17 @@ a{
     right:2rem;
     z-index: 100;
     transform: translateX(180%);
-    transition: all 700ms ease-out;
+    transition: transform 700ms ease-out;
 }
 .about.open{
     transform: translateX(0%);
 }
+.about:hover{
+    background-color: white;
+    color: black;
+}
+
+
 .date{
     display: block;
     font-family: 'Inter', sans-serif;
@@ -383,7 +395,6 @@ a{
         font-family: 'Inter', sans-serif;
         margin-top: 10px;
     }
-
 }
 
 @media (min-width:600px) {
