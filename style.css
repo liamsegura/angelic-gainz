@@ -272,8 +272,8 @@ a{
     color: black;
 }
 
-
-.date{
+.date:after{
+    content:'2022';
     display: block;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
@@ -286,6 +286,9 @@ a{
     background:none; */
     color: black;
     background:white;
+}
+.date:hover:after{
+    content:"EST";
 }
 /* .date:hover{
     color: black;
