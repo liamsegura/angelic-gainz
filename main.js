@@ -67,6 +67,8 @@ const menu = document.getElementById('toggle').addEventListener('click', () => {
 
 // })
 
+
+// fixes animation bug
 let resizeTimer;
 window.addEventListener("resize", () => {
   document.body.classList.add("resize-animation-stopper");
