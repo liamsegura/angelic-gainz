@@ -50,9 +50,7 @@ const menu = document.getElementById('toggle').addEventListener('click', () => {
 
     navbar.classList.toggle('open')
     // navbar.classList.add('animate__animated', 'animate__slideInRight');
-
     about.classList.toggle('open')
-
 })
 
 // const close = document.querySelector('.navbar-hide').addEventListener('click', () => {
@@ -68,3 +66,12 @@ const menu = document.getElementById('toggle').addEventListener('click', () => {
 //     about.classList.remove('animate__animated', 'animate__slideInRight');
 
 // })
+
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper");
+  }, 400);
+});

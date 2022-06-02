@@ -54,7 +54,10 @@ table {
     color: white;
     font-family: 'Inter', sans-serif;
 }
-
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
 /* content */
 .navbar-hide{
     display: flex;
