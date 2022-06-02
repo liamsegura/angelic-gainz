@@ -48,12 +48,23 @@ const menu = document.getElementById('toggle').addEventListener('click', () => {
     const navbar = document.querySelector('navbar')
     const about = document.querySelector('.about')
 
-    navbar.classList.toggle('navbar-hide')
-    navbar.classList.add('animate__animated', 'animate__slideInRight');
+    navbar.classList.toggle('open')
+    // navbar.classList.add('animate__animated', 'animate__slideInRight');
 
-    about.classList.toggle('about-hide')
-    about.classList.add('animate__animated', 'animate__slideInRight');
-
-
+    about.classList.toggle('open')
 
 })
+
+// const close = document.querySelector('.navbar-hide').addEventListener('click', () => {
+
+//     const navbar = document.querySelector('navbar')
+//     const about = document.querySelector('.about')
+
+//     navbar.classList.add('animate__animated', 'animate__slideOutRight');
+//     navbar.classList.remove('animate__animated', 'animate__slideInRight');
+  
+
+   
+//     about.classList.remove('animate__animated', 'animate__slideInRight');
+
+// })

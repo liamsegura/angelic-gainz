@@ -61,7 +61,7 @@ table {
 }
 navbar{
     position: absolute;
- display: none;  
+ display: flex;  
  flex-direction: column;
  right: 0;
  height: 100vh;
@@ -71,6 +71,11 @@ navbar{
  padding-top: 8rem;
  background-color: black;
  z-index: 100;
+ transform: translateX(100%);
+ transition: all 1s ease-out;
+}
+navbar.open{
+    transform: translateX(0%);
 }
 
 navbar a{
@@ -161,16 +166,13 @@ a{
     font-size: 1.5rem;
     z-index: 10;
     margin-left: 0;
-    animation: color-animation 6s infinite linear alternate;
+    animation: color-animation 4s infinite linear alternate;
 }
 
 @keyframes color-animation {
     0% {
        background: #6F29E1;
     }
-    50% {
-       background: #6a1b9a;
-    } 
     100% {
        background: #F1473D;
     } 
@@ -222,7 +224,7 @@ a{
     transform: rotate(-90deg)!important;
 }
 .about{
-    display: none;
+    display: static;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     letter-spacing: -0.2rem;
@@ -230,9 +232,11 @@ a{
     bottom:2.5%;
     right:2rem;
     z-index: 100;
+    transform: translateX(180%);
+    transition: all 1s ease-out;
 }
-.about-hide{
-    display: block;
+.about.open{
+    transform: translateX(0%);
 }
 .date{
     display: block;
@@ -354,6 +358,8 @@ a{
      background-color: black;
      z-index: 100;
      padding-left: 30%;
+     transform: translateX(0%);
+     transition: none;
     }
     
     navbar a{
