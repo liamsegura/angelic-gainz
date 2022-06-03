@@ -104,6 +104,7 @@ navbar a{
 navbar a:hover{
     background-color: var(--white);
     color: var(--black);
+    text-decoration: underline;
 }
 
 .tabbris::after{
@@ -122,6 +123,7 @@ navbar a:hover{
     background-color: #f5fcdf;
     color: var(--black);
     content: "COMING SOON";
+    text-decoration: underline;
 }
 /* hamberger test */
 
@@ -190,12 +192,14 @@ a{
     align-items: center;
 }
 .hero-text{
-    padding-top: 18rem;
+    padding-top: 20rem;
     width: 100vw;
-    padding-bottom: 2rem;
-    transition: all 700ms ease-out;
-    transform: translateX(90%);
-    -webkit-transform: translateX(90%);
+    padding-bottom: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translateX(80%);
+    -webkit-transform: translateX(80%);
+    animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
 }
 
 
@@ -241,8 +245,10 @@ a{
     position: absolute;
     bottom: 0;
     left: 35%;
-    transition: all 700ms ease-out;
+    transition: all 700ms ease-in-out;
     transform: translatey(80%);
+    animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
     }
         .img-name-two {
             transform: rotate(-90deg);
@@ -263,8 +269,10 @@ a{
     left: -4%;
     z-index: 1;
     width: 48%;
-    transition: all 700ms ease-out;
+    transition: all 700ms ease-in-out;
     transform: translateX(-80%);
+    animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
     }
         .img-name-one {
             transform: rotate(-90deg);
@@ -377,7 +385,7 @@ a{
 }
 .about-container span{
     font-family: 'inter', sans-serif;
-    font-size: 1em;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration:underline ;
     padding-bottom: 0.5rem;
@@ -395,7 +403,7 @@ span + h1{
 }
 .about-container h1{
     font-family: 'inter', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
 }
 .bio-section{
@@ -465,14 +473,14 @@ footer a:hover{
 @media (min-width:320px)  {
 
     .hero-text{
-        padding-top: 6rem;
+        padding-top: 8rem;
     }
 
 }
 @media (min-width:375px)  {
 
     .hero-text{
-        padding-top: 10rem;
+        padding-top: 12rem;
     }
     .img-name-one {
 
@@ -536,7 +544,7 @@ footer a:hover{
         display: none;
     }
     .hero-text {
-        padding-top: 8rem;
+        padding-top: 10rem;
     }
     .img-two {
         width: 59%;
@@ -683,7 +691,7 @@ footer a:hover{
 
 @media (min-width:1000px){
         .hero-text {
-            padding-top: 4rem;
+            padding-top: 6rem;
         }
 
         .img-one{
@@ -697,7 +705,7 @@ footer a:hover{
         }
         .btn-primary{
             font-size: 2rem;
-            margin-left: 3.5rem;
+            margin-left: 2.4rem;
            
         }
 }
@@ -705,7 +713,7 @@ footer a:hover{
 
 @media (min-width:1000px){
     .hero-text {
-        padding-top: 4rem;
+        padding-top: 6rem;
     }
 
     .img-one{
@@ -760,7 +768,7 @@ footer a:hover{
     }
     .about-container h1{
         font-family: 'inter', sans-serif;
-        font-size: 2.3rem;
+        font-size: 4rem;
         font-weight: 800;
     }
     .bio-section{
@@ -819,7 +827,7 @@ footer a:hover{
 
 @media (min-width:1300px){
     .hero-text {
-        padding-top: 8rem;
+        padding-top: 10rem;
     }
     .img-one{
 
@@ -845,12 +853,12 @@ footer a:hover{
 
 @media (min-width:1900px){
     .hero-text {
-        padding-top: 6rem;
+        padding-top: 8rem;
     }
     .btn-primary {
         font-size: 2rem;
         letter-spacing: 0;
-        margin-left: 3.5rem;
+        margin-left: 2.4rem;
         }
         .img-one{
 
