@@ -175,9 +175,9 @@ a{
     padding-top: 18rem;
     width: 100vw;
     padding-bottom: 2rem;
-    transition: all 500ms ease-out;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
+    transition: all 700ms ease-out;
+    transform: translateX(90%);
+    -webkit-transform: translateX(90%);
 }
 
 
@@ -223,8 +223,8 @@ a{
     position: absolute;
     bottom: 0;
     left: 35%;
-    transition: all 500ms ease-out;
-    transform: translateX(100%);
+    transition: all 700ms ease-out;
+    transform: translatey(80%);
     }
         .img-name-two {
             transform: rotate(-90deg);
@@ -245,8 +245,8 @@ a{
     left: -4%;
     z-index: 1;
     width: 48%;
-    transition: all 500ms ease-out;
-    transform: translateX(-100%);
+    transition: all 700ms ease-out;
+    transform: translateX(-80%);
     }
         .img-name-one {
             transform: rotate(-90deg);
@@ -347,7 +347,7 @@ a{
 
 .about-container{
     padding: 0 2em;
-    padding-top: 6em;
+    padding-top: 4em;
     max-width: 80rem;
     /* border: 1px solid red; */
     margin: 0 auto;
@@ -569,7 +569,7 @@ footer a{
     }
     .about-container{
         padding: 0 2em;
-        padding-top: 10em;
+        padding-top: 5em;
         max-width: 80rem;
         /* border: 1px solid red; */
         margin: 0 auto;
@@ -701,7 +701,7 @@ footer a{
     
     .about-container{
         padding: 0 2em;
-        padding-top: 10em;
+        padding-top: 6em;
         max-width: 80rem;
         /* border: 1px solid red; */
         margin: 0 auto;
@@ -846,7 +846,7 @@ footer a{
 
 body{
     opacity: 0;
-    transition: opacity 600ms ease-in;
+    transition: opacity 1s ease-in;
 }
 
 .show-time body {
