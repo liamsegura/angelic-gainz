@@ -105,13 +105,22 @@ navbar a:hover{
     background-color: var(--white);
     color: var(--black);
 }
-.tabbis:hover{
+
+.tabbris::after{
+    content: '"TABBRIS"02';
+}
+.tabbris:hover::after{
     background-color: #884aec;
     color: var(--white);
+    content: "COMING SOON";
 }
-.celestial:hover{
+.celestial::after{
+    content: '"CELESTIAL"03';
+}
+.celestial:hover::after{
     background-color: #f5fcdf;
     color: var(--black);
+    content: "COMING SOON";
 }
 /* hamberger test */
 
