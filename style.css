@@ -268,6 +268,7 @@ a{
     display: static;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     letter-spacing: -0.2rem;
     position:fixed;
     bottom:2.5%;
@@ -275,6 +276,7 @@ a{
     z-index: 100;
     transform: translateX(180%);
     transition: transform 700ms ease-out;
+    text-decoration: underline;
 }
 .about.open{
     transform: translateX(0%);
@@ -556,7 +558,7 @@ footer a:hover{
     navbar a{
         margin-right: 2rem;
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: -2px;
         font-family: 'Inter', sans-serif;
         margin-top: 10px;
