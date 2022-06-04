@@ -153,7 +153,8 @@ body{
     background-color: black;
     padding-right: 0.1rem;
     padding-left: 0.1rem;
-    position: fixed;
+    width: 100vw;
+    /* position: fixed; */
 }
 a{
     text-decoration: none;
@@ -163,11 +164,14 @@ a{
     max-width: 100%;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 .hero-text{
     padding-top: 8rem;
     width: 100vw;
     padding-bottom: 2rem;
+    transition: all 1s ease-out;
+    transform: translateX(100%);
 }
 
 
@@ -209,10 +213,11 @@ a{
 .img-two {
     width: 66%;
 
-    position: fixed;
-    bottom: 0px;
+    position: absolute;
+    bottom: -2%;
     left: 35%;
     transition: all 1s ease-out;
+    transform: translateX(100%);
     }
         .img-name-two {
             transform: rotate(-90deg);
@@ -224,17 +229,17 @@ a{
             font-size: 10px;
             }
 .img-two:hover{
-    rotate: 2deg;
-    scale: 1.1;
+    transform: rotate(2deg) scale(1.1);
 }
 .img-one {
 
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     left: -4%;
     z-index: 1;
     width: 48%;
     transition: all 1s ease-out;
+    transform: translateX(-100%);
     }
         .img-name-one {
             transform: rotate(-90deg);
@@ -246,10 +251,7 @@ a{
             font-size: 10px;
             }
             .img-one:hover{
-                rotate: -2deg;
-                scale: 1.1;
-                -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+                transform: rotate(-2deg) scale(1.1);
             }
 .rotate{
     transform: rotate(-90deg)!important;
@@ -280,7 +282,7 @@ a{
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     letter-spacing: -0.2rem;
-    position:fixed;
+    position:absolute;
     bottom:2.5%;
     left:2%;
     z-index: 5;
@@ -302,6 +304,10 @@ a{
     bottom:0px;
     left:50%;
 } */
+.soar{
+    width: 100%;
+}
+
 @media (max-height:440px){
     .img-container{
         display: none;
@@ -430,8 +436,6 @@ a{
 
     .img-two {
     width: 36%;
-    position: fixed;
-    bottom: 0px;
     left: 52%;
     }
 }
@@ -448,8 +452,6 @@ a{
 
         .img-two {
         width: 44%;
-        position: fixed;
-        bottom: 0px;
         left: 52%;
         }
         .btn-primary{
@@ -471,8 +473,6 @@ a{
 
     .img-two {
     width: 36%;
-    position: fixed;
-    bottom: 0px;
     left: 52%;
     }
     .img-name-one {
@@ -500,8 +500,6 @@ a{
     
 .img-two {
     width: 29%;
-    position: fixed;
-    bottom: 0px;
     left: 60%;
 }
 .img-name-one {
@@ -532,8 +530,6 @@ a{
         }
 .img-two {
     width: 25%;
-    position: fixed;
-    bottom: 0px;
     left: 60%;
 }
 /* 2 */
@@ -565,4 +561,6 @@ body {
 }
 
 
-
+.slide-in{
+    transform: translateX(0%);
+}

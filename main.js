@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const imgTwo = document.querySelector('.img-two')
 
 
-        element.classList.add('animate__animated', 'animate__fadeInRight');
-        imgOne.classList.add('animate__animated', 'animate__fadeInLeft');
-        imgTwo.classList.add('animate__animated', 'animate__fadeInRight');
+        element.classList.add('slide-in');
+        imgOne.classList.add('slide-in');
+        imgTwo.classList.add('slide-in');
         document.documentElement.classList.add('show-time');
          
        });
