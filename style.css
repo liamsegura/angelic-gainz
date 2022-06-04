@@ -113,6 +113,7 @@ navbar a:hover{
     background-color: #884aec;
     color: var(--white);
     content: "COMING SOON";
+    text-decoration: underline;
 }
 .celestial::after{
     content: '"CELESTIAL"03';
