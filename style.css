@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    position: fixed;
    
 }
 ol, ul {
@@ -49,10 +50,13 @@ table {
 	border-spacing: 0;
 }
 
-
+:root{
+    --white: #eeeeee;
+    --black: #141414;
+}
 
 *{
-    color: white;
+    color: var(--white);
     font-family: 'Inter', sans-serif;
 }
 
@@ -75,10 +79,11 @@ navbar{
  justify-content: start;
  align-items: flex-end;
  padding-top: 8rem;
- background-color: black;
+ background-color: var(--black);
  z-index: 100;
  transition: transform 700ms ease-out;
  transform: translateX(100%);
+ -webkit-transform: translateX(100%);
  overflow: hidden;
 }
 navbar.open{
@@ -92,13 +97,13 @@ navbar a{
     font-weight: 700;
     letter-spacing: -2px;
     font-family: 'Inter', sans-serif;
-    margin-top: 10px;
+    margin-top: 2px;
     padding-left: 0;
     background: none;
 }
 navbar a:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 /* hamberger test */
@@ -128,7 +133,7 @@ navbar a:hover{
     width: 2.2em;
     height: 2px;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: var(--white);
     margin-top: 6px;
     transition: all 0.3s ease-in-out;
     }
@@ -151,7 +156,7 @@ navbar a:hover{
   }
 
 body{
-    background-color: black;
+    background-color: var(--black);
     padding-right: 0.1rem;
     padding-left: 0.1rem;
     width: 100vw;
@@ -165,14 +170,15 @@ a{
     max-width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
 }
 .hero-text{
-    padding-top: 8rem;
+    padding-top: 18rem;
     width: 100vw;
     padding-bottom: 2rem;
-    transition: all 1s ease-out;
+    transition: all 500ms ease-out;
     transform: translateX(100%);
+    -webkit-transform: translateX(100%);
 }
 
 
@@ -188,8 +194,8 @@ a{
     animation: color-animation 4s infinite linear alternate;
 }
 .btn-primary:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
     animation: none;
 }
 
@@ -213,11 +219,10 @@ a{
 
 .img-two {
     width: 66%;
-
     position: absolute;
     bottom: -2%;
     left: 35%;
-    transition: all 1s ease-out;
+    transition: all 500ms ease-out;
     transform: translateX(100%);
     }
         .img-name-two {
@@ -239,7 +244,7 @@ a{
     left: -4%;
     z-index: 1;
     width: 48%;
-    transition: all 1s ease-out;
+    transition: all 500ms ease-out;
     transform: translateX(-100%);
     }
         .img-name-one {
@@ -273,8 +278,8 @@ a{
     transform: translateX(0%);
 }
 .about:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .date:after{
@@ -306,25 +311,121 @@ a{
     left:50%;
 } */
 .footer-container{
-    background-color: #ffffff;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
 }
 .footer-container span{
-    color: black;
+    color: var(--black);
     font-family: 'inter', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
 }
 .footer-container a{
-    color: black;
+    color:var(--black);
     font-family: 'inter', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
 }
 
+
+
+
+/* ABOUT PAGE */
+
+.opacity{
+    opacity: 1;
+    position: static;
+}
+
+.fitnes-club-svg{
+    width: 100%;
+}
+
+.about-container{
+    padding: 0 2em;
+    padding-top: 6em;
+    max-width: 80rem;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+.about-container span{
+    font-family: 'inter', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration:underline ;
+    padding-bottom: 0.5rem;
+}
+
+.about-container p{
+    font-family: 'inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 100%;
+    padding-top: 0.5rem;
+}
+span + h1{
+   padding-top: 1rem;
+}
+.about-container h1{
+    font-family: 'inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+.bio-section{
+    /* border:1px solid green; */
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+.bio-section img{
+   width: 100%;
+    height: 100%;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+.bio-section h1{
+    max-width: 100%;
+
+}
+.bio-section p{
+
+    max-width: 100%;
+
+}
+.about-container h2{
+    font-family: 'inter', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: underline;
+    padding: 6rem 0 2rem 0;
+}
+.fitness-club-est{
+    background-image: url(/fitness\ club\ est\ 2k22.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 25rem;
+    /* border:1px solid #6F29E1; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+}
+.fitness-club-est img{
+    height: 80%;
+}
+footer a{
+    font-family: 'inter', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 1rem;
+}
 
 @media (max-height:440px){
     .img-container{
@@ -334,9 +435,18 @@ a{
         display: none;
 }
 }
+@media (min-width:320px)  {
 
+    .hero-text{
+        padding-top: 6rem;
+    }
+
+}
 @media (min-width:375px)  {
 
+    .hero-text{
+        padding-top: 10rem;
+    }
     .img-name-one {
 
         left: 16em;
@@ -427,18 +537,18 @@ a{
      justify-content: start;
      align-items: center;
      padding-top: 0rem;
-     background-color: black;
+     background-color:var(--black);
      z-index: 100;
-     padding-left: 30%;
+     padding-left: 5%;
      transform: translateX(0%);
      transition: none;
      opacity: 1;
     }
     
     navbar a{
-        margin-right: 2rem;
+        margin-right: 5rem;
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 500;
         letter-spacing: -2px;
         font-family: 'Inter', sans-serif;
         margin-top: 10px;
@@ -455,6 +565,85 @@ a{
     .img-two {
     width: 36%;
     left: 52%;
+    }
+    .about-container{
+        padding: 0 2em;
+        padding-top: 10em;
+        max-width: 80rem;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+    }
+
+    .about-container span{
+        font-size: 1.5em;
+    }
+    .about-container p{
+        font-size: 1.8rem;
+        width: 75%;
+  
+    }
+    .about-container h1{
+        font-size: 2rem;
+    }
+    .about-container h2{
+
+        font-size: 2rem;
+    }
+  
+    .bio-section p{
+    
+        max-width: 85%;
+    
+    }
+    .bio-section{
+        display: block;
+    }
+    .fitness-club-est{
+        height: 50rem;
+    }
+    .fitness-club-est img{
+        height: 75%;
+    }
+    footer a{
+        font-size: 2rem;
+        padding: 2rem;   
+    }
+}
+@media (min-width:700px) {
+   
+    .img-one{
+        left: 13%;
+        width: 28%;
+    }
+
+    .img-two {
+    width: 36%;
+    left: 52%;
+    }
+
+
+    .about-container span{
+        font-size: 1.5em;
+    }
+    .about-container p{
+        font-size: 1.8rem;
+  
+    }
+    .about-container h1{
+        font-size: 2rem;
+    }
+    .about-container h2{
+
+        font-size: 2rem;
+    }
+    .fitness-club-est{
+        height: 50rem;
+    }
+    .fitness-club-est img{
+        height: 75%;
+    }
+    footer a{
+        font-size: 2rem;   
     }
 }
 
@@ -503,6 +692,93 @@ a{
     
         left: 31rem;
         }
+    /* about page */
+
+    .fitnes-club-svg{
+        width: 100%;
+    }
+    
+    .about-container{
+        padding: 0 2em;
+        padding-top: 10em;
+        max-width: 80rem;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+    }
+    .about-container span{
+        font-family: 'inter', sans-serif;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration:underline ;
+        padding-bottom: 2rem;
+    }
+    
+    .about-container p{
+        font-family: 'inter', sans-serif;
+        font-size: 2.3rem;
+        font-weight: 600;
+        max-width: 75%;
+        padding-top: 1rem;
+    }
+    span + h1{
+       padding-top: 1rem;
+    }
+    .about-container h1{
+        font-family: 'inter', sans-serif;
+        font-size: 2.3rem;
+        font-weight: 800;
+    }
+    .bio-section{
+        /* border:1px solid green; */
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3rem;
+    }
+    .bio-section img{
+       width: 40%;
+        height: 100%;
+        padding-right: 4rem;
+    }
+    .bio-section h1{
+        max-width: 100%;
+    
+    }
+    .bio-section p{
+    
+        max-width: 85%;
+    
+    }
+    .about-container h2{
+        font-family: 'inter', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: underline;
+        padding: 6rem 0 2rem 0;
+    }
+    .fitness-club-est{
+        background-image: url(/fitness\ club\ est\ 2k22.svg);
+        background-size: 100%;
+        width: 100%;
+        height: 65rem;
+        /* border:1px solid #6F29E1; */
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+    .fitness-club-est img{
+        height: 70%;
+    }
+    footer a{
+        font-family: 'inter', sans-serif;
+        font-size: 2.3rem;
+        font-weight: 600;
+        text-decoration: underline;
+        padding: 2rem;
+    }
 
 }
 
@@ -567,18 +843,18 @@ a{
 
 /* aniation  */
 
-body {
+body{
     opacity: 0;
-    left: -100%;
-    transition: opacity 700ms ease-in;
+    transition: opacity 600ms ease-in;
 }
 
 .show-time body {
     opacity: 1;
-    left: 0;
 }
 
 
 .slide-in{
     transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
+
