@@ -854,8 +854,12 @@ footer a:hover{
 /* aniation  */
 
 body{
-    opacity: 0;
-    transition: opacity 1s ease-in;
+    opacity: 1;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
 }
 
 .show-time body {
