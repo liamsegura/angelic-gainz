@@ -161,7 +161,7 @@ body{
     padding-left: 0.1rem;
     width: 100vw;
     height: 100vh;
-    /* position: fixed; */
+    position: fixed;
 }
 a{
     text-decoration: none;
