@@ -13,8 +13,6 @@ headsortails()
 
 
 
-
-
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", function(event) {
   
