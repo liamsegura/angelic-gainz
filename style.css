@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    position: fixed;
    
 }
 ol, ul {
@@ -161,7 +160,6 @@ body{
     padding-left: 0.1rem;
     width: 100vw;
     height: 100vh;
-    position: fixed;
 }
 a{
     text-decoration: none;
@@ -216,13 +214,13 @@ a{
 .img-container{
     display: block;
 
-    
+
 }
 
 .img-two {
     width: 66%;
     position: absolute;
-    bottom: -2%;
+    bottom: 0;
     left: 35%;
     transition: all 500ms ease-out;
     transform: translateX(100%);
