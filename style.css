@@ -184,10 +184,10 @@ a{
 
 .btn-primary{
     padding: 10px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #6F29E1;
-    font-family: 'Jockey One', sans-serif;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     font-size: 1.5rem;
     z-index: 10;
     margin-left: 0;
@@ -564,6 +564,9 @@ footer a:hover{
         margin-top: 10px;
         text-decoration: underline;
     }
+    .btn-primary{
+        text-decoration: underline;
+    }
 }
 
 @media (min-width:600px) {
@@ -678,6 +681,7 @@ footer a:hover{
         .btn-primary{
             font-size: 2rem;
             margin-left: 3.5rem;
+           
         }
 }
 
@@ -791,7 +795,6 @@ footer a:hover{
         font-size: 2.3rem;
         font-weight: 600;
         text-decoration: underline;
-        padding: 2rem;
     }
 
 }
