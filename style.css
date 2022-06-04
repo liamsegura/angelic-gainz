@@ -428,7 +428,10 @@ footer a{
     font-size: 2.3rem;
     font-weight: 600;
     text-decoration: underline;
-    padding: 1rem;
+}
+footer a:hover{
+    background:var(--white);
+    color: var(--black);   
 }
 
 @media (max-height:440px){
@@ -609,8 +612,7 @@ footer a{
         height: 75%;
     }
     footer a{
-        font-size: 2rem;
-        padding: 2rem;   
+        font-size: 2rem; 
     }
 }
 @media (min-width:700px) {
@@ -646,9 +648,13 @@ footer a{
     .fitness-club-est img{
         height: 75%;
     }
+    footer ul{
+        padding: 2rem;
+    }
     footer a{
         font-size: 2rem;   
     }
+   
 }
 
 @media (min-width:1000px){
@@ -862,3 +868,36 @@ body{
     -webkit-transform: translateX(0%);
 }
 
+.fade-in-text {
+    /* display: inline-block; */
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
