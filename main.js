@@ -110,3 +110,7 @@ window.addEventListener("resize", () => {
   }, 400);
 });
 
+const comingSoonButton = document.querySelectorAll('.buttonComingSoon')
+comingSoonButton.forEach(e => e.addEventListener('click', () => {
+  e.innerHTML = "COMING SOON"
+}))
