@@ -299,7 +299,7 @@ a{
     bottom:2.5%;
     right:2rem;
     z-index: 100;
-    transform: translateX(180%);
+    transform: translateX(150%);
     transition: transform 700ms ease-out;
     text-decoration: underline;
 }
