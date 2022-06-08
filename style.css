@@ -675,7 +675,6 @@ width: 100%;
     }
     .about-container p{
         font-size: 1.8rem;
-        width: 75%;
   
     }
     .about-container h1{
@@ -702,6 +701,64 @@ width: 100%;
     }
     footer a{
         font-size: 2rem; 
+    }
+     /* clothing section */
+     .clothing-hero-container{
+        width: 100%;
+    }
+    .clothing-hero-text{
+        width: 100%;
+        padding-top: 10rem;
+    }
+.clothing-container-main{
+    /* padding: 0 2em; */
+    padding-top: 2rem;
+    max-width: 60rem;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.clothing-container{
+    display: flex;
+
+}
+.clothing-info-one{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.first-img{
+    height: 400px;
+    width: 100%;
+}
+.margin-top{
+    margin-top: 15rem;
+}
+}
+
+@media (min-width:1300px){
+    .hero-text {
+        padding-top: 10rem;
+    }
+    .img-one{
+
+        width: 28%;
+    }
+    
+.img-two {
+    width: 29%;
+    left: 60%;
+}
+.img-name-one {
+
+    left: 9rem;
+   
+    }
+
+.img-name-two {
+
+    left: 51rem;
     }
 }
 @media (min-width:700px) {
@@ -879,64 +936,7 @@ width: 100%;
         font-weight: 600;
         text-decoration: underline;
     }
-    /* clothing section */
-    .clothing-hero-container{
-        width: 100%;
-    }
-    .clothing-hero-text{
-        width: 100%;
-        padding-top: 10rem;
-    }
-.clothing-container-main{
-    /* padding: 0 2em; */
-    padding-top: 2rem;
-    max-width: 60rem;
-    /* border: 1px solid red; */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-.clothing-container{
-    display: flex;
-
-}
-.clothing-info-one{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-.first-img{
-    height: 600px;
-    width: 100%;
-}
-.margin-top{
-    margin-top: 15rem;
-}
-}
-
-@media (min-width:1300px){
-    .hero-text {
-        padding-top: 10rem;
-    }
-    .img-one{
-
-        width: 28%;
-    }
-    
-.img-two {
-    width: 29%;
-    left: 60%;
-}
-.img-name-one {
-
-    left: 9rem;
    
-    }
-
-.img-name-two {
-
-    left: 51rem;
-    }
 
 }
 
