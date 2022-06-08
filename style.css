@@ -310,7 +310,27 @@ a{
     background-color: var(--white);
     color: var(--black);
 }
-
+.home{
+    display: static;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.2rem;
+    position:fixed;
+    bottom:7.5%;
+    right:2rem;
+    z-index: 100;
+    transform: translateX(180%);
+    transition: transform 700ms ease-out;
+    text-decoration: underline;
+}
+.home.open{
+    transform: translateX(0%);
+}
+.home:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
 .date:after{
     content:'2022';
     display: block;
@@ -462,6 +482,40 @@ footer a:hover{
     color: var(--black);   
 }
 
+
+/* clothing section */
+
+.clothing-container{
+    display: block;
+}
+  /* clothing section */
+  .clothing-hero-container{
+    width: 100%;
+}
+.clothing-hero-text{
+    width: 100%;
+    padding-top: 10rem;
+}
+.clothing-container-main{
+/* padding: 0 2em; */
+padding-top: 2em;
+max-width: 60rem;
+/* border: 1px solid red; */
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+
+.clothing-info-one{
+display: flex;
+flex-direction: column;
+padding: 1rem;
+}
+.first-img{
+height: 600px;
+width: 100%;
+}
+
 @media (max-height:440px){
     .img-container{
         display: none;
@@ -560,6 +614,9 @@ footer a:hover{
         display: none;
         }
     .about{
+        transform: translateX(0%);
+    }
+    .home{
         transform: translateX(0%);
     }
     navbar{
@@ -708,6 +765,7 @@ footer a:hover{
             margin-left: 2.4rem;
            
         }
+       
 }
 
 
@@ -745,7 +803,7 @@ footer a:hover{
         padding: 0 2em;
         padding-top: 6em;
         max-width: 80rem;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         margin: 0 auto;
     }
     .about-container span{
@@ -821,9 +879,40 @@ footer a:hover{
         font-weight: 600;
         text-decoration: underline;
     }
+    /* clothing section */
+    .clothing-hero-container{
+        width: 100%;
+    }
+    .clothing-hero-text{
+        width: 100%;
+        padding-top: 10rem;
+    }
+.clothing-container-main{
+    /* padding: 0 2em; */
+    padding-top: 2em;
+    max-width: 60rem;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.clothing-container{
+    display: flex;
 
 }
-
+.clothing-info-one{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.first-img{
+    height: 600px;
+    width: 100%;
+}
+.margin-top{
+    margin-top: 15rem;
+}
+}
 
 @media (min-width:1300px){
     .hero-text {

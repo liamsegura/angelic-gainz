@@ -49,25 +49,14 @@ const menu = document.getElementById('toggle').addEventListener('click', () => {
 
     const navbar = document.querySelector('navbar')
     const about = document.querySelector('.about')
+    const home = document.querySelector('.home')
 
     navbar.classList.toggle('open')
-    // navbar.classList.add('animate__animated', 'animate__slideInRight');
     about.classList.toggle('open')
+    home.classList.toggle('open')
 })
 
-// const close = document.querySelector('.navbar-hide').addEventListener('click', () => {
 
-//     const navbar = document.querySelector('navbar')
-//     const about = document.querySelector('.about')
-
-//     navbar.classList.add('animate__animated', 'animate__slideOutRight');
-//     navbar.classList.remove('animate__animated', 'animate__slideInRight');
-  
-
-   
-//     about.classList.remove('animate__animated', 'animate__slideInRight');
-
-// })
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
