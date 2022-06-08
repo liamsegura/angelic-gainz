@@ -803,7 +803,7 @@ width: 100%;
         padding: 0 2em;
         padding-top: 6em;
         max-width: 80rem;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: 0 auto;
     }
     .about-container span{
