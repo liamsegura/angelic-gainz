@@ -212,6 +212,7 @@ a{
     font-size: 1.5rem;
     z-index: 10;
     margin-left: 0;
+    text-align: center;
     animation: color-animation 4s infinite linear alternate;
 }
 .btn-primary:hover{
@@ -513,7 +514,7 @@ padding: 1rem;
 }
 .first-img{
 height: 350px;
-width: 100%;
+max-width: 400px;
 }
 
 @media (max-height:440px){
@@ -730,7 +731,7 @@ width: 100%;
 }
 .first-img{
     height: 400px;
-    width: 100%;
+    max-width: 400px;
 }
 .margin-top{
     margin-top: 15rem;
