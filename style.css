@@ -515,7 +515,29 @@ padding: 1rem;
 .first-img{
 height: 350px;
 max-width: 400px;
+margin-bottom: 5px;
 }
+
+
+.btn-primary-shop{
+    padding: 9px 9px;
+    border-radius: 5px;
+    background-color: #884aec;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    z-index: 10;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    animation: color-animation 4s infinite linear alternate;
+}
+.btn-primary-shop:hover{
+    background-color: var(--white);
+    color: var(--black);
+    animation: none;
+}
+
 
 @media (max-height:440px){
     .img-container{
@@ -575,6 +597,11 @@ max-width: 400px;
     .btn-primary{
         align-self: flex-start;
         background-color: #F1473D;
+    }
+    .btn-primary-shop{
+        align-self: flex-start;
+        background-color: #F1473D;
+        margin-left: 1rem;
     }
     .hero-text{
         
