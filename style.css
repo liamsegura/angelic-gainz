@@ -107,13 +107,10 @@ navbar a:hover{
     text-decoration: underline;
 }
 
-.tabbris::after{
-    content: '"TABBRIS"02';
-}
-.tabbris:hover::after{
+
+.tabbris:hover{
     background-color: #884aec;
     color: var(--white);
-    content: "COMING SOON";
     text-decoration: underline;
 }
 .celestial::after{
