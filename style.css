@@ -513,7 +513,6 @@ flex-direction: column;
 padding: 1rem;
 }
 .first-img{
-height: 400px;
 width: 100%;
 margin-bottom: 5px;
 }
@@ -757,7 +756,7 @@ margin-bottom: 5px;
     padding: 1rem;
 }
 .first-img{
-    height: 600px;
+
     width: 450px;
 }
 .margin-top{
