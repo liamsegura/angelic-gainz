@@ -107,7 +107,9 @@ navbar a:hover{
     text-decoration: underline;
 }
 
-
+.tabbris-bg{
+    background-color: #884aec;
+}
 .tabbris:hover{
     background-color: #884aec;
     color: var(--white);
