@@ -117,7 +117,7 @@ navbar a:hover{
 }
 
 .celestial:hover{
-    background-color: #f5fcdf;
+    background-color: var(--white);
     color: var(--black);
     text-decoration: underline;
 }
