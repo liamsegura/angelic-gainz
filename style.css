@@ -146,6 +146,12 @@ navbar a:hover{
 }
 /* hamberger test */
 
+.sola-bg{
+    background-color: royalblue;
+}
+.sola:hover{
+    background-color: royalblue!important;
+}
 #toggle {
     display: none;
   }
